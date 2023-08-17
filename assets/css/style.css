@@ -142,6 +142,10 @@ nav a:hover {
   margin-left: 2%;
   content: "\2192";
 }
+.banner_options a:hover {
+  color: #0079c7;
+  background-color: #FFFFFF;
+}
 
 .banner3_desc1 {
   font-size: 12px;
