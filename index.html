@@ -4,6 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,user-scalable=0" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById("menuMobile2").addEventListener("click", function () {
+                if (document.querySelector(".menu nav ul").style.display === 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+
     <title>MediCenter</title>
 </head>
 
@@ -16,6 +29,11 @@
             </div>
             <div class="menu">
                 <nav>
+                    <div id="menuMobile2" class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="">Home</a></li>
                         <li><a href="">About</a></li>
